@@ -1,7 +1,7 @@
 # ch1seL.RazorViewRenderService
 
 Easy way to render Razor View to string.
-It might be use to compose mail message or compose other texts through Razor Views.
+It might be use to compose mail message or other texts through Razor Views.
 
 ## How to use
 
@@ -18,6 +18,7 @@ Install-Package ch1seL.RazorViewRenderService
 dotnet add package ch1seL.RazorViewRenderService
 ```
 
+
 ### Sample using
 
 Create blank ASP.NET Core Web Application MVC:
@@ -31,6 +32,7 @@ dotnet add package ch1seL.RazorViewRenderService
 
 Update Startup.cs:
 ```
+using ch1seL.RazorViewRender;
 ...
         public void ConfigureServices(IServiceCollection services)
         {
@@ -74,6 +76,8 @@ Update Controllers/HomeController.cs
 Add RazorViewRenderService as DI
 Add FooBar method to compose html-string content
 ```
+using ch1seL.RazorViewRender;
+...
         private readonly RazorViewRenderService _razorViewRenderService;
 
         public HomeController(ILogger<HomeController> logger, RazorViewRenderService razorViewRenderService)
@@ -97,7 +101,8 @@ Add FooBar method to compose html-string content
                 ContentType = "text/html",
                 StatusCode = 200
             };
-        }        
+        }     
+...   
 ```
 
 Run application
