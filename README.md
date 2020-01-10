@@ -44,11 +44,11 @@ Add template model class Models/FooBarModel.cs
 ```
 namespace RazorViewRender.Sample.Models
 {
-    public class FooBarModel
-    {
-        public string Foo { get; set; }
-        public string Bar { get; set; }
-    }
+        public class FooBarModel
+        {
+                public string Foo { get; set; }
+                public string Bar { get; set; }
+        }
 }
 ```
 
