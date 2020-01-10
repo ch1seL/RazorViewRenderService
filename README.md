@@ -24,18 +24,20 @@ Create blank ASP.NET Core Web Application MVC:
 ```powershell 
 dotnet new mvc -n RazorViewRender.Sample
 ```
-
+Install Nuget package
 ```powershell
 dotnet add package ch1seL.RazorViewRenderService
 ```
 
 Update Startup.cs:
 ```
+...
         public void ConfigureServices(IServiceCollection services)
         {
-          ...
-          services.AddRazorViewRenderService();          
+                ...
+                services.AddRazorViewRenderService();          
         }
+...
 ```
 
 Add template model class Models/FooBarModel.cs
@@ -103,4 +105,4 @@ Run application
 dotnet run 
 ```
 
-Open site `https://localhost:5001/Home/FooBar` to view result
+Open site `https://localhost:5001/Home/FooBar` to get result
