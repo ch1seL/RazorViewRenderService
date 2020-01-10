@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+        <OutputType>Library</OutputType>
+        <Authors>ch1seL</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>3.1.0</Version>
+        <Description>Easy way to render Razor View as string</Description>
+        <Copyright>ch1seL © 2020</Copyright>
+        <PackageTags>Razor AspNetCore String</PackageTags>
+        <PackageProjectUrl>https://github.com/ch1seL/RazorViewRenderService</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/ch1seL/RazorViewRenderService</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>First public version</PackageReleaseNotes>
+        <IsPackable>true</IsPackable>
+        <AssemblyName>ch1seL.RazorViewRender</AssemblyName>
+        <RootNamespace>ch1seL.RazorViewRender</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="$(PackageLicenseFile)" Pack="true" Visible="true" PackagePath="" />
+    </ItemGroup>
+</Project>
