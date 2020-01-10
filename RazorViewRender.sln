@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorViewRender", "RazorViewRender\RazorViewRender.csproj", "{8B0AFDE1-1F6A-463C-A313-9138AE60510B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorViewRender.Sample", "RazorViewRender.Sample\RazorViewRender.Sample.csproj", "{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{8B0AFDE1-1F6A-463C-A313-9138AE60510B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0AFDE1-1F6A-463C-A313-9138AE60510B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0AFDE1-1F6A-463C-A313-9138AE60510B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
