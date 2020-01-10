@@ -36,12 +36,13 @@ namespace RazorViewRender.Sample.Controllers
 
         public async Task<IActionResult> FooBar()
         {
-            var content = await _razorViewRenderService.RenderStringAsync("Sample/Template",
+            var content = await _razorViewRenderService.RenderStringAsync("Home/FooBar",
                 new FooBarModel
                 {
                     Foo = "Foo",
                     Bar = "<b>B</b>ar"
-                });
+                }
+            );
 
             return new ContentResult
             {
