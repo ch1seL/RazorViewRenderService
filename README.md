@@ -1,3 +1,4 @@
+![Build Test Publish](https://github.com/ch1seL/RazorViewRenderService/workflows/Build%20Test%20Publish/badge.svg)
 # ch1seL.RazorViewRenderService
 
 Easy way to render Razor View to string.
