@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace ch1seL.RazorViewRender
 {
-    public class RazorViewRenderService
+    public class RazorViewRenderService : IRazorViewRenderService
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly ITempDataProvider _tempDataProvider;
