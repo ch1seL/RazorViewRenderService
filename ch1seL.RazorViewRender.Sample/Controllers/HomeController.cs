@@ -36,7 +36,7 @@ namespace RazorViewRender.Sample.Controllers
 
         public async Task<IActionResult> FooBar()
         {
-            var content = await _razorViewRenderService.RenderStringAsync("Home/FooBar",
+            var content = await _razorViewRenderService.RenderStringAsync("Test/FooBar",
                 new FooBarModel
                 {
                     Foo = "Foo",
