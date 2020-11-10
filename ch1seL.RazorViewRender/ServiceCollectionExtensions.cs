@@ -6,7 +6,7 @@ namespace ch1seL.RazorViewRender
     {
         public static IServiceCollection AddRazorViewRenderService(this IServiceCollection serviceCollection)
         {
-            return serviceCollection.AddScoped<RazorViewRenderService>();
+            return serviceCollection.AddScoped<IRazorViewRenderService, RazorViewRenderService>();
         }
     }
 }

@@ -10,9 +10,9 @@ namespace RazorViewRender.Sample.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly RazorViewRenderService _razorViewRenderService;
+        private readonly IRazorViewRenderService _razorViewRenderService;
 
-        public HomeController(ILogger<HomeController> logger, RazorViewRenderService razorViewRenderService)
+        public HomeController(ILogger<HomeController> logger, IRazorViewRenderService razorViewRenderService)
         {
             _logger = logger;
             _razorViewRenderService = razorViewRenderService;
