@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch1seL.RazorViewRender", "ch1seL.RazorViewRender\ch1seL.RazorViewRender.csproj", "{8B0AFDE1-1F6A-463C-A313-9138AE60510B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch1seL.RazorViewRender.Sample", "ch1seL.RazorViewRender.Sample\ch1seL.RazorViewRender.Sample.csproj", "{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{9B1CE1F3-72A5-45CB-BFB9-4D82E50A256D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
