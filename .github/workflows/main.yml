@@ -9,22 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.1.1          
+    - uses: actions/setup-dotnet@v4.0.0
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 6.0.x
-
-    - name: Restore
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-
-    - name: Publish NuGet ch1seL.RazorViewRender
-      uses: brandedoutcast/publish-nuget@v2.5.5
-      with:
-        PROJECT_FILE_PATH: ch1seL.RazorViewRender/ch1seL.RazorViewRender.csproj
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-        VERSION_REGEX: ^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$
+    - run: dotnet restore
+    - run: dotnet build --configuration Release --no-restore
+    - run: dotnet pack -v normal -c Release --include-symbols --include-source ch1seL.RazorViewRender
+    - run: dotnet nuget push "./**/bin/Release/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}} --skip-duplicate

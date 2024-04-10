@@ -1,15 +1,28 @@
-using Microsoft.AspNetCore.Hosting;
+using ch1seL.RazorViewRender;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace RazorViewRender.Sample; 
+var builder = WebApplication.CreateBuilder(args);
 
-public class Program {
-	public static void Main(string[] args) {
-		CreateHostBuilder(args).Build().Run();
-	}
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorViewRenderService("CustomViews");
 
-	public static IHostBuilder CreateHostBuilder(string[] args) {
-		return Host.CreateDefaultBuilder(args)
-		           .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
-	}
+var app = builder.Build();
+
+if (builder.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+app.MapDefaultControllerRoute();
+app.Run();
