@@ -9,5 +9,11 @@
         <ProjectReference Include="..\ch1seL.RazorViewRender\ch1seL.RazorViewRender.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+    </ItemGroup>
+
 
 </Project>
